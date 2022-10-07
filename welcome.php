@@ -1,3 +1,6 @@
+<?php 
+  $user = $_POST['user'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,7 +23,7 @@
         <img src="assets/images/welcome.png" class="img-welcome" />
       </div>
       <div class="content">
-        <h3>Olá, <span id="user">User</span>!</h3>
+        <h3>Olá, <span id="user"><?php echo $user; ?></span>!</h3>
         <p>Seja bem vindo!</p>
       </div>
     </div>
